@@ -1,13 +1,19 @@
 /* ---------- Tokens ---------- */
 
+/* Palette: Classic Crimson #d7263d, Prussian Blue #02182b, Dodger Blue #0197f6,
+   Pacific Cyan #448fa3, Sky Blue #68c5db. */
+
 :root {
-  --bg: #f6f4ef;
+  --bg: #f3f8fb;
   --surface: #ffffff;
-  --text: #1a1a17;
-  --muted: #5f5d55;
-  --line: #dcd8cd;
-  --accent: #b8430f;
-  --accent-contrast: #ffffff;
+  --text: #02182b;
+  --muted: #47616f;
+  --line: #d3e2ea;
+  --accent: #0173bf; /* Dodger Blue, darkened to stay readable on a light background */
+  --focus: #0197f6;
+  --cta: #d7263d;
+  --cta-contrast: #ffffff;
+  --error: #d7263d;
 
   --sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   --mono: ui-monospace, "Cascadia Code", "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
@@ -18,24 +24,30 @@
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --bg: #121311;
-    --surface: #1a1b18;
-    --text: #ebe8e0;
-    --muted: #a3a096;
-    --line: #2e2f2a;
-    --accent: #f08a4b;
-    --accent-contrast: #16130f;
+    --bg: #02182b;
+    --surface: #07243c;
+    --text: #e9f2f7;
+    --muted: #9ab4c2;
+    --line: #153650;
+    --accent: #68c5db;
+    --focus: #0197f6;
+    --cta: #d7263d;
+    --cta-contrast: #ffffff;
+    --error: #ff8a98; /* Crimson, lightened to stay readable on Prussian Blue */
   }
 }
 
 :root[data-theme="dark"] {
-  --bg: #121311;
-  --surface: #1a1b18;
-  --text: #ebe8e0;
-  --muted: #a3a096;
-  --line: #2e2f2a;
-  --accent: #f08a4b;
-  --accent-contrast: #16130f;
+  --bg: #02182b;
+  --surface: #07243c;
+  --text: #e9f2f7;
+  --muted: #9ab4c2;
+  --line: #153650;
+  --accent: #68c5db;
+  --focus: #0197f6;
+  --cta: #d7263d;
+  --cta-contrast: #ffffff;
+  --error: #ff8a98;
 }
 
 /* ---------- Base ---------- */
@@ -84,7 +96,7 @@ a {
 }
 
 :focus-visible {
-  outline: 2px solid var(--accent);
+  outline: 2px solid var(--focus);
   outline-offset: 3px;
   border-radius: 4px;
 }
@@ -106,8 +118,8 @@ a {
   top: -60px;
   z-index: 20;
   padding: 8px 14px;
-  background: var(--accent);
-  color: var(--accent-contrast);
+  background: var(--cta);
+  color: var(--cta-contrast);
   border-radius: 6px;
   text-decoration: none;
 }
@@ -164,7 +176,7 @@ a {
 }
 
 .site-nav a.active {
-  border-bottom-color: var(--accent);
+  border-bottom-color: var(--cta);
 }
 
 .theme-toggle {
@@ -211,7 +223,7 @@ a {
 /* ---------- Hero ---------- */
 
 .hero {
-  padding-top: clamp(64px, 12vw, 136px);
+  padding-top: clamp(40px, 6vw, 72px);
   padding-bottom: clamp(56px, 8vw, 96px);
 }
 
@@ -264,13 +276,13 @@ h1 {
 }
 
 .button.primary {
-  background: var(--accent);
-  border-color: var(--accent);
-  color: var(--accent-contrast);
+  background: var(--cta);
+  border-color: var(--cta);
+  color: var(--cta-contrast);
 }
 
 .button.primary:hover {
-  border-color: var(--accent);
+  border-color: var(--cta);
   filter: brightness(1.08);
 }
 
@@ -433,7 +445,7 @@ h1 {
   top: 0.72em;
   width: 8px;
   height: 1px;
-  background: var(--accent);
+  background: var(--cta);
 }
 
 .tags {
@@ -546,9 +558,9 @@ h1 {
 
 .field input:focus-visible,
 .field textarea:focus-visible {
-  outline: 2px solid var(--accent);
+  outline: 2px solid var(--focus);
   outline-offset: 1px;
-  border-color: var(--accent);
+  border-color: var(--focus);
 }
 
 .contact-form .button {
@@ -573,7 +585,7 @@ h1 {
 }
 
 .form-status.error {
-  color: var(--accent);
+  color: var(--error);
 }
 
 .hp {
@@ -595,7 +607,7 @@ h1 {
   letter-spacing: -0.03em;
   line-height: 1.2;
   text-decoration: underline;
-  text-decoration-color: var(--accent);
+  text-decoration-color: var(--cta);
   text-decoration-thickness: 3px;
   text-underline-offset: 0.18em;
   overflow-wrap: anywhere;
