@@ -424,6 +424,16 @@ h1 {
   color: var(--accent);
 }
 
+.client {
+  margin-top: 20px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.job .client + ul {
+  margin-top: 10px;
+}
+
 .job ul {
   margin-top: 16px;
   display: grid;
