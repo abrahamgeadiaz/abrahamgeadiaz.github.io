@@ -137,10 +137,11 @@
           <div class="job-body">
             <h3>Senior Software Engineer <span class="company">Petco</span></h3>
             <ul>
-              <li>Lead development of Vet Online Booking features using React, TypeScript and Django-backed services.</li>
-              <li>Implement integrations with GraphQL and RESTful API services.</li>
+              <li>Lead development of Vet Online Booking, which handles around 50,000 visits and roughly 10,000 appointments a day, using React, TypeScript and Django-backed services.</li>
+              <li>Raised booking conversion by 5 points by redesigning the appointment flow.</li>
+              <li>Migrated a service from a REST API to a GraphQL endpoint, using a shadow release to validate it against live traffic before cutover.</li>
               <li>Refactor legacy modules to improve application performance, maintainability and scalability.</li>
-              <li>Manage GitLab CI/CD pipelines and automated testing workflows to speed up delivery.</li>
+              <li>Extended the GitLab CI/CD pipeline with client and server test coverage, an AI code review assistant and tagged deployments.</li>
               <li>Collaborate across teams on API integrations, architecture discussions and production support.</li>
             </ul>
             <p class="tags"><span>React</span><span>TypeScript</span><span>Django</span><span>GraphQL</span><span>GitLab CI/CD</span></p>
@@ -153,7 +154,7 @@
             <h3>Software Engineering Consultant <span class="company">TLNT · Contract</span></h3>
             <ul>
               <li>Developed internal applications, reporting systems and backend services using Python and Starlette.</li>
-              <li>Built observability solutions with Vector and Axiom, improving real-time monitoring and incident response.</li>
+              <li>Built observability solutions with Vector and Axiom that flag anomalies as they happen, removing about an hour of waiting for someone to report an incident.</li>
               <li>Resolved performance bottlenecks and delivered scalable solutions aligned with business requirements.</li>
             </ul>
             <p class="tags"><span>Python</span><span>Starlette</span><span>Vector</span><span>Axiom</span></p>
@@ -164,13 +165,21 @@
           <p class="job-dates">Aug 2022 – Oct 2024</p>
           <div class="job-body">
             <h3>Software Engineer <span class="company">Luxoft</span></h3>
+            <p class="client">Client: global quick-service restaurant brand</p>
             <ul>
-              <li>Architected the migration of legacy TIBCO integrations to AWS serverless solutions using Python, Lambda, S3 and DynamoDB.</li>
+              <li>Architected the migration of four legacy TIBCO integrations, covering document processing and parameter updates, to AWS serverless solutions using Python, Lambda, S3 and DynamoDB.</li>
+            </ul>
+            <p class="client">Client: global online travel company</p>
+            <ul>
               <li>Maintained 17 microservices built with Python, Java and JavaScript on Kafka and MongoDB.</li>
               <li>Processed large-scale datasets with Scala and PySpark, supporting 10,000+ active users.</li>
               <li>Developed monitoring dashboards and alerts in Splunk and Datadog to improve reliability.</li>
             </ul>
-            <p class="tags"><span>AWS Lambda</span><span>DynamoDB</span><span>Kafka</span><span>PySpark</span><span>Datadog</span></p>
+            <p class="client">Across both clients</p>
+            <ul>
+              <li>Deployed services through Jenkins CI/CD pipelines, using Docker for local development environments.</li>
+            </ul>
+            <p class="tags"><span>AWS Lambda</span><span>DynamoDB</span><span>Kafka</span><span>PySpark</span><span>Datadog</span><span>Jenkins</span></p>
           </div>
         </li>
 
@@ -179,8 +188,7 @@
           <div class="job-body">
             <h3>Technology Analyst <span class="company">Infosys</span></h3>
             <ul>
-              <li>Engineered Python data pipelines on Google Cloud Composer (Airflow) to automate replenishment of 1M+ BigQuery records daily.</li>
-              <li>Built ETL workflows supporting enterprise reporting and analytics initiatives.</li>
+              <li>Maintained and extended a 25-step Python and SQL pipeline on Google Cloud Composer (Airflow) that automates replenishment of 1M+ BigQuery records daily, adding 2 steps and cutting total run time by 5%.</li>
               <li>Implemented CI/CD processes with TeamCity and GitHub to improve deployment efficiency.</li>
             </ul>
             <p class="tags"><span>Python</span><span>Airflow</span><span>BigQuery</span><span>ETL</span><span>TeamCity</span></p>
@@ -192,11 +200,11 @@
           <div class="job-body">
             <h3>Developer Analyst <span class="company">GT Logistics</span></h3>
             <ul>
-              <li>Led development efforts and mentored junior engineers across logistics technology projects.</li>
-              <li>Architected integrations between WMS, TMS and CRM platforms using Laravel, Node.js and REST APIs.</li>
+              <li>Led development efforts and mentored two junior engineers across logistics technology projects.</li>
+              <li>Architected integrations across six systems: a self-hosted on-premises CRM, the 3PL Central WMS, two TMS platforms, SAP and a BPM system, using Laravel, Node.js and REST APIs.</li>
               <li>Developed real-time shipment visibility solutions using React, Angular and Ionic.</li>
             </ul>
-            <p class="tags"><span>Laravel</span><span>Node.js</span><span>React</span><span>Angular</span><span>Ionic</span></p>
+            <p class="tags"><span>Laravel</span><span>Node.js</span><span>SAP</span><span>3PL Central</span><span>React</span><span>Angular</span><span>Ionic</span></p>
           </div>
         </li>
 
@@ -207,7 +215,7 @@
             <ul>
               <li>Provided L4 support for enterprise inventory management systems used across the Americas.</li>
               <li>Maintained C# .NET applications and Oracle database integrations.</li>
-              <li>Resolved production issues and supported release management processes.</li>
+              <li>Resolved 45+ client production tickets and supported release management processes.</li>
             </ul>
             <p class="tags"><span>C# .NET</span><span>Oracle</span><span>L4 support</span></p>
           </div>
@@ -220,7 +228,7 @@
       <dl class="skills">
         <div>
           <dt>Languages</dt>
-          <dd>Python, TypeScript, JavaScript, Java, SQL, Scala, PHP</dd>
+          <dd>Python, TypeScript, JavaScript, Java, SQL, Scala, PHP, C#</dd>
         </div>
         <div>
           <dt>Backend</dt>
@@ -232,7 +240,7 @@
         </div>
         <div>
           <dt>Cloud &amp; DevOps</dt>
-          <dd>AWS (Lambda, S3, DynamoDB), GCP (BigQuery, Composer), Docker, GitLab CI/CD, GitHub Actions, Jenkins</dd>
+          <dd>AWS (Lambda, S3, DynamoDB), GCP (BigQuery, Cloud Composer), Docker, GitLab CI/CD, Jenkins, TeamCity</dd>
         </div>
         <div>
           <dt>Data engineering</dt>
@@ -245,6 +253,10 @@
         <div>
           <dt>Monitoring</dt>
           <dd>Datadog, Splunk, Axiom, Vector</dd>
+        </div>
+        <div>
+          <dt>Enterprise integration</dt>
+          <dd>SAP, TIBCO, 3PL Central (WMS)</dd>
         </div>
       </dl>
 
