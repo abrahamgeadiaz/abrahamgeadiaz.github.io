@@ -475,6 +475,107 @@ h1 {
   white-space: nowrap;
 }
 
+/* ---------- Projects ---------- */
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+
+.project-wide {
+  grid-column: 1 / -1;
+}
+
+.project img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  object-position: top left;
+  border-bottom: 1px solid var(--line);
+}
+
+.project img.project-logo {
+  object-fit: contain;
+  object-position: center;
+  background: #fef9f3;
+}
+
+.project-body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 24px;
+}
+
+.project h3 {
+  font-size: 1.2rem;
+  line-height: 1.35;
+  letter-spacing: -0.01em;
+}
+
+.project-body > p:not(.tags, .project-links, .project-demo) {
+  margin-top: 10px;
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.55;
+}
+
+.project-status {
+  margin-left: 6px;
+  font-family: var(--mono);
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0;
+  color: var(--accent);
+  white-space: nowrap;
+}
+
+.project-links {
+  margin-top: auto;
+  padding-top: 16px;
+  font-family: var(--mono);
+  font-size: 14px;
+}
+
+.project-links a {
+  text-decoration: underline;
+  text-decoration-color: var(--cta);
+  text-underline-offset: 0.3em;
+}
+
+.project-links a:hover {
+  color: var(--accent);
+}
+
+.project-demo {
+  margin-top: 16px;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.project-demo code {
+  white-space: nowrap;
+  font-family: var(--mono);
+  font-size: 13px;
+  color: var(--text);
+}
+
+.project-links a + a {
+  margin-left: 16px;
+}
+
 /* ---------- Skills ---------- */
 
 .skills > div {
@@ -704,9 +805,21 @@ h1 {
     display: none;
   }
 
+  .header-inner {
+    gap: 8px;
+  }
+
   .site-nav {
-    gap: 16px;
-    margin-right: auto;
+    flex: 1;
+    min-width: 0;
+    gap: 12px;
+    font-size: 12px;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  .projects {
+    grid-template-columns: 1fr;
   }
 
   .stats {
