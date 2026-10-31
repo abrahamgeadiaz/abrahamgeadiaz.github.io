@@ -88,5 +88,12 @@
     });
   }
 
+  // Printing should include the roles that are collapsed on screen.
+  window.addEventListener('beforeprint', function () {
+    Array.prototype.forEach.call(document.querySelectorAll('.job-details'), function (item) {
+      item.open = true;
+    });
+  });
+
   document.getElementById('year').textContent = new Date().getFullYear();
 })();
