@@ -227,6 +227,39 @@ a {
   padding-bottom: clamp(56px, 8vw, 96px);
 }
 
+.hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
+  gap: clamp(32px, 5vw, 64px);
+  align-items: center;
+}
+
+.hero-shot {
+  display: block;
+  text-decoration: none;
+}
+
+.hero-shot img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+
+.hero-shot-caption {
+  display: block;
+  margin-top: 12px;
+  font-family: var(--mono);
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--muted);
+}
+
+.hero-shot:hover .hero-shot-caption {
+  color: var(--text);
+}
+
 .eyebrow {
   font-family: var(--mono);
   font-size: 13px;
@@ -788,7 +821,8 @@ h1 {
 
 @media (max-width: 820px) {
   .about-grid,
-  .contact-grid {
+  .contact-grid,
+  .hero-grid {
     grid-template-columns: 1fr;
   }
 
