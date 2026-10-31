@@ -506,12 +506,6 @@ h1 {
   border-bottom: 1px solid var(--line);
 }
 
-.project img.project-logo {
-  object-fit: contain;
-  object-position: center;
-  background: #fef9f3;
-}
-
 .project-body {
   display: flex;
   flex: 1;
