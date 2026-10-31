@@ -35,8 +35,8 @@
       <a class="brand" href="#top">Abraham Gea Diaz</a>
       <nav class="site-nav" aria-label="Sections">
         <a href="#about">About</a>
-        <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
         <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -133,8 +133,40 @@
       </div>
     </section>
 
+    <section class="section wrap" id="projects">
+      <h2 class="section-title"><span>02</span> Projects</h2>
+      <ul class="projects">
+        <li class="project">
+          <img src="assets/projects/outage-explorer.png" width="1280" height="800" loading="lazy" alt="Outage Explorer chart of the share of U.S. nuclear capacity offline each day over five years, with summary figures above it.">
+          <div class="project-body">
+            <h3>Outage Explorer</h3>
+            <p>Explore and query U.S. nuclear outage data from the EIA API, covering 1.1M+ rows since 2007. Users can run read-only SQL, and each role queries its own database holding only the tables and columns it may see.</p>
+            <p class="tags"><span>Python</span><span>FastAPI</span><span>DuckDB</span><span>Parquet</span><span>React</span><span>TypeScript</span></p>
+            <p class="project-demo">Demo login for a local run: <code>analyst</code> / <code>analyst-demo-pass</code></p>
+            <p class="project-links"><a href="https://github.com/abrahamgeadiaz/outage-explorer" target="_blank" rel="noopener">Source code <span aria-hidden="true">↗</span></a> <a href="https://github.com/abrahamgeadiaz/outage-explorer#quick-start" target="_blank" rel="noopener">Run it locally <span aria-hidden="true">↗</span></a></p>
+          </div>
+        </li>
+        <li class="project">
+          <img src="assets/projects/kidezy.png" width="1280" height="800" loading="lazy" alt="Three Kidezy screens with demo data: a growth curve with percentiles, medication routines, and vaccination progress.">
+          <div class="project-body">
+            <h3>Kidezy</h3>
+            <p>Lets families track a child's growth, milestones and medication reminders, with shared access for caregivers. It also scans prescription photos with AI and works in English and Spanish.</p>
+            <p class="tags"><span>FastAPI</span><span>PostgreSQL</span><span>React</span><span>TypeScript</span><span>Gemini</span><span>Render</span></p>
+            <p class="project-links"><a href="https://todo-para-mi-frontend.onrender.com" target="_blank" rel="noopener">Live app <span aria-hidden="true">↗</span></a></p>
+          </div>
+        </li>
+        <li class="project project-wide">
+          <div class="project-body">
+            <h3>The Alarm Buddy <span class="project-status">In progress</span></h3>
+            <p>An Android alarm app that ramps up gently and can alert a partner or family member when you don't get up, built on a native Kotlin alarm module and a Spring Boot API.</p>
+            <p class="tags"><span>Spring Boot</span><span>Java</span><span>PostgreSQL</span><span>React Native</span><span>Kotlin</span></p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
     <section class="section wrap" id="experience">
-      <h2 class="section-title"><span>02</span> Experience</h2>
+      <h2 class="section-title"><span>03</span> Experience</h2>
       <ol class="timeline">
         <li class="job">
           <p class="job-dates">Feb 2025 – Present</p>
@@ -225,38 +257,6 @@
           </div>
         </li>
       </ol>
-    </section>
-
-    <section class="section wrap" id="projects">
-      <h2 class="section-title"><span>03</span> Projects</h2>
-      <ul class="projects">
-        <li class="project">
-          <img src="assets/projects/outage-explorer.png" width="1280" height="800" loading="lazy" alt="Outage Explorer chart of the share of U.S. nuclear capacity offline each day over five years, with summary figures above it.">
-          <div class="project-body">
-            <h3>Outage Explorer</h3>
-            <p>Explore and query U.S. nuclear outage data from the EIA API, covering 1.1M+ rows since 2007. Users can run read-only SQL, and each role queries its own database holding only the tables and columns it may see.</p>
-            <p class="tags"><span>Python</span><span>FastAPI</span><span>DuckDB</span><span>Parquet</span><span>React</span><span>TypeScript</span></p>
-            <p class="project-demo">Demo login for a local run: <code>analyst</code> / <code>analyst-demo-pass</code></p>
-            <p class="project-links"><a href="https://github.com/abrahamgeadiaz/outage-explorer" target="_blank" rel="noopener">Source code <span aria-hidden="true">↗</span></a> <a href="https://github.com/abrahamgeadiaz/outage-explorer#quick-start" target="_blank" rel="noopener">Run it locally <span aria-hidden="true">↗</span></a></p>
-          </div>
-        </li>
-        <li class="project">
-          <img src="assets/projects/kidezy.png" width="1280" height="800" loading="lazy" alt="Three Kidezy screens with demo data: a growth curve with percentiles, medication routines, and vaccination progress.">
-          <div class="project-body">
-            <h3>Kidezy</h3>
-            <p>Lets families track a child's growth, milestones and medication reminders, with shared access for caregivers. It also scans prescription photos with AI and works in English and Spanish.</p>
-            <p class="tags"><span>FastAPI</span><span>PostgreSQL</span><span>React</span><span>TypeScript</span><span>Gemini</span><span>Render</span></p>
-            <p class="project-links"><a href="https://todo-para-mi-frontend.onrender.com" target="_blank" rel="noopener">Live app <span aria-hidden="true">↗</span></a></p>
-          </div>
-        </li>
-        <li class="project project-wide">
-          <div class="project-body">
-            <h3>The Alarm Buddy <span class="project-status">In progress</span></h3>
-            <p>An Android alarm app that ramps up gently and can alert a partner or family member when you don't get up, built on a native Kotlin alarm module and a Spring Boot API.</p>
-            <p class="tags"><span>Spring Boot</span><span>Java</span><span>PostgreSQL</span><span>React Native</span><span>Kotlin</span></p>
-          </div>
-        </li>
-      </ul>
     </section>
 
     <section class="section wrap" id="skills">
